@@ -61,23 +61,23 @@ public class lang_reader{
         }
       }
       if(set==0){
+        ex = 1;
         while(ex==1){
+          
         }
       } else if(set==1){
-        while(ex==1){
-        }
+        System.out.println("\033[32mNot functional\033[0m");
       } else if(set==2){
-        while(ex==1){
-        }
+        System.out.println("\033[32mNot functional\033[0m");
       } else{
         throw new SettingBoundsException();
       }
     } catch(IOException e){
-      System.out.println("\033[31mError[1]:Input/Output Failure");
+      System.out.println("\033[31mError[1]:Input/Output Failure\033[0m");
     } catch(SettingBoundsEception e){
-      System.out.println("\033[31mError[2]:Setting variable has a value that it should not be able to");
+      System.out.println("\033[31mError[2]:Setting variable has a value that it should not be able to\033[0m");
     } catch(Exception e){
-      System.out.println("\033[31mError[0]:Something Failed");
+      System.out.println("\033[31mError[0]:Something Failed\033[0m");
     }
   }
 }
