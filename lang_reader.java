@@ -36,10 +36,13 @@ public class lang_reader{
       if(set==0){
       } else if(set==1){
       } else if(set==2){
+      } else{
+        throw new SettingBoundsException();
       }
     } catch(IOException e){
       System.out.println("\033[31mError[1]:Input/Output Failure");
-    } catch(Exception e){
+    } catch(Se
+      catch(Exception e){
       System.out.println("\033[31mError[0]:Something Failed");
     }
   }
