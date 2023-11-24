@@ -21,6 +21,19 @@ public class lang_reader{
       int article = options_handler.nextInt();
       String[255] roots;
       String[255] rgender;
+      String[255][255] affixes;
+      int ex = 1;
+      int set;
+      while(ex==1){
+        if(encode_pos==0){
+          if(gender_no_pos==0){
+            set=0;
+          } else{
+            set=1;
+          }
+        } else{
+          set=2;
+      }
     } catch(IOException e){
       System.out.println("\033[31mError[1]:Input/Output Failure");
     } catch(Exception e){
