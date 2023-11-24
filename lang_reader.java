@@ -20,6 +20,7 @@ public class lang_reader{
       int post = options_handler.nextInt();
       int article = options_handler.nextInt();
       String[255] roots;
+      String[255] rgender;
     } catch(IOException e){
       System.out.println("\033[31mError[1]:Input/Output Failure");
     } catch(Exception e){
