@@ -13,6 +13,8 @@ public class lang_reader{
       int gender_nouns = options_handler.nextInt();
       int encode_pos = options_handler.nextInt();
       int gender_verbs = options_handler.nextInt();
+      int gender_adjs = options_handler.nextInt();
+      int gender_no_pos = options_handler.nextInt();
     } catch(Exception e){
       System.out.println("\033[31mError[0]:Something Failed");
     }
