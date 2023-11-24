@@ -24,15 +24,18 @@ public class lang_reader{
       String[255][255] affixes;
       int ex = 1;
       int set;
-      while(ex==1){
-        if(encode_pos==0){
-          if(gender_no_pos==0){
-            set=0;
-          } else{
-            set=1;
-          }
+      if(encode_pos==0){
+        if(gender_no_pos==0){
+          set=0;
         } else{
-          set=2;
+          set=1;
+        }
+      } else{
+        set=2;
+      }
+      if(set==0){
+      } else if(set==1){
+      } else if(set==2){
       }
     } catch(IOException e){
       System.out.println("\033[31mError[1]:Input/Output Failure");
