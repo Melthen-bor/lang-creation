@@ -44,26 +44,39 @@ public class lang_reader{
       String x = '';
       while(ex==1){
         try{
-          w=gen.nextInt();
+          w = gen.nextInt();
           while(w>0){
             randindex = gen.nextInt(consonants.length);
-            x=concate(x,consonants[randindex]);
+            x = concate(x,consonants[randindex]);
             randindex = gen.nextInt(vowels.length);
-            x=concate(x,vowels[randindex]);
-            w-=1;
+            x = concate(x,vowels[randindex]);
+            w -= 1;
           }
           roots[z] = x;
           z += 1;
           x = "",
         } catch(Exception e){
-          z=0;
-          ex=0;
+          z = 0;
+          ex = 0;
+          x = "";
         }
       }
       if(set==0){
         ex = 1;
         while(ex==1){
-          
+          try{
+            randindex = gen.nextInt(vowels.length);
+            x = vowels[randindex];
+            randindex = gen.nextInt(consonants.length);
+            x = concate(x,consonants[randindex]);
+            affixes[z][0] = x;
+            x = "";
+            z += 1;
+          } catch(Exception e){
+            ex = 0;
+            z = 0;
+            x = "";
+          }
         }
       } else if(set==1){
         System.out.println("\033[32mNot functional\033[0m");
