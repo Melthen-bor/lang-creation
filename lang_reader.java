@@ -41,8 +41,9 @@ public class lang_reader{
       }
     } catch(IOException e){
       System.out.println("\033[31mError[1]:Input/Output Failure");
-    } catch(Se
-      catch(Exception e){
+    } catch(SettingBoundsEception e){
+      System.out.println("\033[31mError[2]:Setting variable has a value that it should not be able to");
+    } catch(Exception e){
       System.out.println("\033[31mError[0]:Something Failed");
     }
   }
