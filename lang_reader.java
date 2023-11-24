@@ -11,7 +11,8 @@ public class lang_reader{
       File options = new File("options.txt");
       Scanner options_handler = new Scanner(options);
       int gender_nouns = options_handler.nextInt();
-      int 
+      int encode_pos = options_handler.nextInt();
+      int gender_verbs = options_handler.nextInt();
     } catch(Exception e){
       System.out.println("\033[31mError[0]:Something Failed");
     }
