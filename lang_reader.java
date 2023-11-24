@@ -34,8 +34,14 @@ public class lang_reader{
         set=2;
       }
       if(set==0){
+        while(ex==1){
+        }
       } else if(set==1){
+        while(ex==1){
+        }
       } else if(set==2){
+        while(ex==1){
+        }
       } else{
         throw new SettingBoundsException();
       }
